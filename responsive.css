@@ -1,0 +1,334 @@
+/* Mobile First Responsive Design */
+
+/* Large screens (desktops) */
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media screen and (max-width: 968px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 2rem 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu li {
+    margin: 1rem 0;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .features-grid,
+  .dishes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens (mobile phones) */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+    min-height: auto;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn {
+    width: 200px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-hero {
+    padding: 100px 0 60px;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .features,
+  .popular-dishes,
+  .about-content,
+  .mission,
+  .stats,
+  .contact-content {
+    padding: 60px 0;
+  }
+
+  .features-grid,
+  .dishes-grid,
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .feature-card,
+  .dish-card,
+  .mission-card {
+    padding: 1.5rem;
+  }
+
+  .about-text h2,
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p,
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .stat-item h3 {
+    font-size: 2.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .nav-container {
+    padding: 0 10px;
+  }
+
+  .nav-logo h2 {
+    font-size: 1.3rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .page-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-hero p {
+    font-size: 1rem;
+  }
+
+  .feature-card,
+  .dish-card,
+  .mission-card {
+    padding: 1rem;
+  }
+
+  .feature-icon,
+  .mission-card i {
+    font-size: 2.5rem;
+  }
+
+  .dish-info {
+    padding: 1rem;
+  }
+
+  .about-text h2,
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 80px 0 40px;
+  }
+
+  .page-hero {
+    padding: 80px 0 40px;
+  }
+}
+
+/* High DPI screens */
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
+  /* Optimize for retina displays */
+  .hero-image img,
+  .about-image img,
+  .dish-card img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .hamburger,
+  .hero-buttons,
+  .btn,
+  .footer {
+    display: none;
+  }
+
+  .hero {
+    background: none;
+    color: black;
+  }
+
+  .page-hero {
+    background: none;
+    color: black;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .section-title {
+    font-size: 18pt;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  /* This can be expanded for full dark mode support */
+  .navbar {
+    /* background: #1a1a1a; */
+    border-bottom: 1px solid #333;
+  }
+
+  .nav-link {
+    color: #000000;
+  }
+
+  .hamburger .bar {
+    background: #030303;
+  }
+}
