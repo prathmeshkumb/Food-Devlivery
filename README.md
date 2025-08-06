@@ -8,7 +8,6 @@
 |-----------|------------|--------------|
 | ![Home](assets/Home.png) | ![About](assets/About.png) | ![Contact](assets/Contact.png) |
 
-> 📁 _Make sure to add screenshots in the `assets/` folder and update the file names above accordingly._
 
 ## 🚀 Features
 
