@@ -61,5 +61,3 @@
 * JavaScript (Vanilla)
 
 
-Would you like me to generate a folder-ready version of this README or help you export/upload screenshots?
-```
